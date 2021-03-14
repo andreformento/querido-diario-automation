@@ -1,0 +1,8 @@
+postgresqlUsername: jarbas
+postgresqlPassword: mysecretpassword
+postgresqlPostgresPassword: mysecretpassword
+postgresqlDatabase: jarbas
+
+networkPolicy:
+  enabled: true
+  allowExternal: true
