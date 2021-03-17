@@ -1,0 +1,6 @@
+# https://bitnami.com/stack/rabbitmq/helm
+# https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq/
+
+auth:
+  username: user
+  password: password
