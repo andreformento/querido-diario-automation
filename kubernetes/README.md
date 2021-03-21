@@ -30,8 +30,6 @@ helm -n okfn-brasil \
      --version 10.3.13 \
      --atomic
 ```
-* local access `kubectl port-forward --namespace okfn-brasil svc/postgresql 5432:5432`
-postgresql.okfn-brasil.svc.cluster.local
 
 * memcached:
 ```shell
@@ -43,8 +41,6 @@ helm -n okfn-brasil \
      --version 5.7.0 \
      --atomic
 ```
-* local access `kubectl port-forward --namespace okfn-brasil svc/postgresql 11211:11211`
-memcached.okfn-brasil.svc.cluster.local
 
 * rabbitmq:
 ```shell
@@ -56,14 +52,3 @@ helm -n okfn-brasil \
      --version 8.11.3 \
      --atomic
 ```
-* local access `kubectl port-forward --namespace okfn-brasil svc/rabbitmq 5672:5672`
-rabbitmq.okfn-brasil.svc.cluster.local
-
-    echo "URL : amqp://127.0.0.1:5672/"
-    kubectl port-forward --namespace okfn-brasil svc/rabbitmq 5672:5672
-
-To Access the RabbitMQ Management interface:
-
-    echo "URL : http://127.0.0.1:15672/"
-    kubectl port-forward --namespace okfn-brasil svc/rabbitmq 15672:15672
-
